@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap" rel="stylesheet" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script  type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg font-sans leading-normal tracking-wider">
+
+   <!-- Navbar -->
+    <nav class="bg-black text-white py-4 px-8 flex justify-between items-center">
+        <a href="#home" class="text-[#f5f0e6] text-4xl font-extrabold hover:text-cyan-200 transition duration-300">
+            Daaniyah Khan
+        </a>
+        <div class="space-x-6">
+            <a href="#about" class="hover:text-cyan-200 transition duration-300">About</a>
+            <a href="#skills" class="hover:text-cyan-200 transition duration-300">Skills</a>
+            <a href="#projects" class="hover:text-cyan-200 transition duration-300">Projects</a>
+            <a href="#contact" class="hover:text-cyan-200 transition duration-300">Contact</a>
+        </div>
+    </nav>
+   <!-- Hero Section -->
+<section class="h-screen relative bg-cover bg-center" style="background-image: url('port.jpeg');">
+  <!-- Opaque Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <!-- Text Overlay Container -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center">
+    <h1 id="typing-text" class="text-white text-5xl font-extrabold whitespace-nowrap border-r-4 border-white pr-2 animate-pulse"></h1>
+
+    <!-- Subtitle -->
+    <p class="mt-4 text-white text-xl font-medium opacity-0 animate-slide-up  duration-1000">
+      Passionate Front-end Developer, Computer Science student
+    </p>
+  </div>
+</section>
+
+<!-- about -->
+<section id="about" class="bg-[#f5f0e6] py-32 px-8 md:px-32 rounded-xl shadow-lg">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-20">
+    <!-- Text Content -->
+    <div class="flex-1 text-center md:text-left">
+      <h2 class="text-7xl font-fredoka text-black mb-10 relative inline-block">
+        About Me...
+        <span class="block w-24 h-1 bg-[#FAD4D4] rounded mt-7"></span>
+      </h2>
+      <p class=" text-xl md:text-2xl leading-relaxed mt-10 font-openSans max-w-3xl mx-auto md:mx-0">
+        I am a third year computer science engineering student at Muffakhamjah College of Engineering and Technology, an aspiring web developer passionate about coding and creating compelling marketing campaigns that resonate with target audience and deliver positive results.
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="flex-1 flex justify-center md:justify-end">
+      <img
+        src="cat-port.jpeg"
+        alt="About Me Image"
+        class="w-80 h-80 rounded-full object-cover shadow-2xl opacity-0 slide-in-right"
+      />
+    </div>
+  </div>
+</section>
+
+
+<!-- skills part -->
+<section id="skills" class="py-32 px-8 md:px-29 bg-black">
+  <div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-5xl font-bold text-[#f5f0e6] mb-6 font-fredoka">
+      My Skills
+    </h2>
+  </div>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-10 max-w-6xl mx-auto">
+    <!-- HTML5 -->
+    <div class="flex flex-col items-center space-y-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-16 h-16 object-contain transition-transform duration-300 hover:scale-110" />
+      <span class="text-gray-200 font-semibold">HTML5</span>
+    </div>
+
+    <!-- CSS3 -->
+    <div class="flex flex-col items-center space-y-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-16 h-16 object-contain transition-transform duration-300 hover:scale-110" />
+      <span class="text-gray-200 font-semibold">CSS3</span>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="flex flex-col items-center space-y-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 object-contain transition-transform duration-300 hover:scale-110" />
+      <span class="text-gray-200 font-semibold">JavaScript</span>
+    </div>
+
+    <!-- Tailwind CSS -->
+    <div class="flex flex-col items-center space-y-3">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="w-20 h-20 object-contain transition-transform duration-300 hover:scale-110" />
+      <span class="text-gray-200 font-semibold">Tailwind CSS</span>
+    </div>
+
+    <!-- React -->
+    <div class="flex flex-col items-center space-y-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-20 h-20 object-contain transition-transform duration-300 hover:scale-110" />
+      <span class="text-gray-200 font-semibold">React</span>
+    </div>
+
+    <!-- Java (colored PNG) -->
+    <div class="flex flex-col items-center space-y-3">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" class="w-20 h-20 object-contain transition-transform duration-300 hover:scale-110" />
+      <span class="text-gray-200 font-semibold">Java</span>
+    </div>
+
+    <!-- Python -->
+    <div class="flex flex-col items-center space-y-3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-20 h-20 object-contain transition-transform duration-300 hover:scale-110" />
+      <span class="text-gray-200 font-semibold">Python</span>
+    </div>
+
+    <!-- Speaking Skills -->
+    <div class="flex flex-col items-center space-y-3">
+      <div
+        class="w-16 h-16 rounded-full bg-cyan-500 flex items-center justify-center text-black text-3xl shadow-lg"
+        title="Speaking Skills"
+        aria-label="Speaking Skills"
+      >
+        🎤
+      </div>
+      <span class="text-gray-200 font-semibold">Public Speaking</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="bg-black py-20 px-6 md:px-20">
+  <div class="max-w-6xl mx-auto text-center mb-16">
+    <h2 class="text-6xl font-bold text-[#f5f0e6] mb-8 font-fredoka">My Projects</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto">
+      Some of my recent work...
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <!--1st -->
+    <a
+      href="https://github.com/daaniyahjkhan"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="relative rounded-lg overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+    >
+      <img
+        src="dsaverse.PNG"
+        alt="dsaverse"
+        class="w-full h-64 object-cover"
+      />
+       <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/90 to-transparent px-4 py-4">
+  <h3 class="text-white text-xl font-semibold">DSAverse</h3>
+  <p class="text-gray-300 text-sm mt-1">A visualised Data Structures and Algorithms learning platform made for college students.</p>
+</div>
+    </a>
+<!-- 2nd -->
+    <a
+      href="https://github.com/KhizarAlmasKhan/ai_legal_assistant_project"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="relative rounded-lg overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+    >
+      <img
+        src="pla.PNG"
+        alt="Pla"
+        class="w-full h-64 object-cover"
+      /> 
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/90 to-transparent px-4 py-4">
+  <h3 class="text-white text-xl font-semibold">AI Powered Legal Assistant</h3>
+  <p class="text-gray-300 text-sm mt-1">A website that promotes legal education, crafted for lawyers/law students/general public to seek legal help and educate theselves.</p>
+</div>
+<!-- 3rd -->
+    </a>
+
+    <a
+      href="https://github.com/daaniyahjkhan"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="relative rounded-lg overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+    >
+      <img
+        src="sticky-notes.jpeg"
+        alt="sticky-notes"
+        class="w-full h-64 object-cover"
+      />
+     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/90 to-transparent px-4 py-4">
+  <h3 class="text-white text-xl font-semibold">Sticky-notes App</h3>
+  <p class="text-gray-300 text-sm mt-1">A react app made to take down quick notes on the go....</p>
+</div>
+    </a>
+<!-- 4th -->
+    <a
+      href="https://github.com/daaniyahjkhan/word-scramble-game"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="relative rounded-lg overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+    >
+      <img
+        src="word-game.jpeg"
+        alt="Word Scramble Game"
+        class="w-full h-64 object-cover"
+      /> 
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/90 to-transparent px-4 py-4">
+  <h3 class="text-white text-xl font-semibold">Word Scramble Game</h3>
+  <p class="text-gray-300 text-sm mt-1">A game made for fun for anyone with a lot of time on their hands:)</p>
+</div>
+    </a>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50"><div class="max-w-6xl mx-auto text-center mb-12">
+    <h2 class="text-5xl font-bold text-black mb-6 font-fredoka">
+      Contact Me
+    </h2>
+    <p class="text-xl max-w-2xl mx-auto mb-12 text-gray-700">
+      I'd love to hear from you. Feel free to reach out!
+    </p>
+    
+
+
+
+
+ <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <!-- Email -->
+      <a href="mailto:djk06khan@gmail.com" class="flex items-center space-x-3 hover:text-blue-600 transition" aria-label="Send email">
+        
+        <span class="text-lg font-medium">djk06khan@gmail.com</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/daaniyah-khan-16023a32a" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 hover:text-blue-600 transition" aria-label="LinkedIn profile">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-4 0v6h-4v-6a6 6 0 016-6zM2 9h4v12H2zM4 3a2 2 0 110 4 2 2 0 010-4z" />
+        </svg>
+        <span class="text-lg font-medium">LinkedIn</span>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/daaniyahjk" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 hover:text-blue-600 transition" aria-label="GitHub profile">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.343-3.369-1.343-.455-1.157-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.004.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.34-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.983 1.029-2.681-.103-.254-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.845a9.56 9.56 0 012.5.337c1.91-1.294 2.75-1.025 2.75-1.025.546 1.377.202 2.393.1 2.647.64.698 1.028 1.59 1.028 2.681 0 3.842-2.337 4.687-4.565 4.935.36.31.68.923.68 1.861 0 1.344-.012 2.427-.012 2.758 0 .268.18.58.688.481A10.012 10.012 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/>
+        </svg>
+        <span class="text-lg font-medium">GitHub</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4 text-center">
+        <p>&copy; 2025 Daaniyah Khan | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
